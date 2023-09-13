@@ -2,8 +2,6 @@
 <html>
 <head>
     <title>Temperature Converter</title>
-    <!-- <link rel="stylesheet" type="text/css" href="live test/style.css"> -->
-
 </head>
 <body>
     <h2>Temperature Converter</h2>

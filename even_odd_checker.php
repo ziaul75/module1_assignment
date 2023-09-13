@@ -10,16 +10,12 @@
         <input type="submit" value="Check">
     </form>
     <?php
-    // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the user input
         $number = $_POST["number"];
 
-        // Check if the input is empty
         if (empty($number)) {
             echo "<p>Please enter a number.</p>";
         } else {
-            // Check if the number is even or odd
             if ($number % 2 == 0) {
                 echo "<p>{$number} is even.</p>";
             } else {

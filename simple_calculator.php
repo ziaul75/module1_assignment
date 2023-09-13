@@ -6,7 +6,6 @@
 <body>
     <h1>Simple Calculator</h1>
     
-    <!-- Form for user input -->
     <form method="post">
         Enter the first number: <input type="number" name="number1"><br>
         Enter the second number: <input type="number" name="number2"><br>
@@ -21,14 +20,11 @@
     </form>
 
     <?php
-    // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the user input
         $number1 = $_POST["number1"];
         $number2 = $_POST["number2"];
         $operation = $_POST["operation"];
 
-        // Perform the selected operation and display the result
         switch ($operation) {
             case "add":
                 $result = $number1 + $number2;
@@ -51,7 +47,6 @@
                 break;
         }
 
-        // Display the result
         echo "<p>Result: $result</p>";
     }
     ?>
